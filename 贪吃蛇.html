@@ -1,15 +1,20 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>贪吃蛇游戏</title>
-    <style>
-        canvas {
-            border: 1px solid #000;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>贪吃蛇</title>
 </head>
+<style>
+    canvas {
+        border: 1px solid #000;
+    }
+</style>
 <body>
 <canvas id="canvas" width="400" height="400"></canvas>
+</body>
 <script>
   // 获取canvas和上下文对象
   let canvas = document.getElementById("canvas");
@@ -18,7 +23,7 @@
   // 定义蛇的初始位置和速度
   let snake = [{ x: 10, y: 10 }];
   let dx = 10;
-  let dy = 2;
+  let dy = 0;
   // 定义食物的位置
   let food = { x: 0, y: 0 };
 
@@ -118,5 +123,4 @@
   generateFood();
   setInterval(gameLoop, 100);
 </script>
-</body>
 </html>
