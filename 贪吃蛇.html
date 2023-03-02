@@ -12,19 +12,18 @@
 <canvas id="canvas" width="400" height="400"></canvas>
 <script>
   // 获取canvas和上下文对象
-  var canvas = document.getElementById("canvas");
-  var ctx = canvas.getContext("2d");
+  let canvas = document.getElementById("canvas");
+  let ctx = canvas.getContext("2d");
 
   // 定义蛇的初始位置和速度
-  var snake = [{ x: 10, y: 10 }];
-  var dx = 10;
-  var dy = 0;
-
+  let snake = [{ x: 10, y: 10 }];
+  let dx = 10;
+  let dy = 2;
   // 定义食物的位置
-  var food = { x: 0, y: 0 };
+  let food = { x: 0, y: 0 };
 
   // 定义游戏结束的标志
-  var gameOver = false;
+  let gameOver = false;
 
   // 生成随机位置的食物
   function generateFood() {
